@@ -1,0 +1,7 @@
+<launch>
+<arg name="file_path"   default="$(find tp_robot)/config/test.yaml"/>
+
+<node pkg="tp_robot" type="tp_robot_node" name="tp_robot_node" output="screen">
+    <param name="file_path" value="$(arg file_path)"/>
+</node>
+</launch>
